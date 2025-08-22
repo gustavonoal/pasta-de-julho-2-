@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Orçamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Orçamento</h1>
+    <form id="orcamentoForm">
+    <div id="roupasContainer">
+        <div class="roupa">
+            <select class="tipoRoupa">
+                <option value="camisa" data-preco="40">Camisas</option>
+                <option value="calca" data-preco="70">Calças</option>
+                <option value="jaqueta" data-preco="120">Jaquetas</option>
+            </select>
+            <input type="number" class="quantidadeRoupa" min="0" value="0" required>
+        </div>
+    </div>
+    <button type="button" id="adicionarRoupa">Adicionar tipo de roupa</button>
+    <button type="submit">Calcular Orçamento</button>
+</form>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+</body>
+</html>

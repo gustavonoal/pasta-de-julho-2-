@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Mini ProtFólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/imagem.jpg" alt="meme" class="cabecalho-img">
+    </header>
+    <div class="container">
+        <form id="portfolio-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="texto-livre">Texto livre:</label>
+            <textarea id="texto-livre" name="texto-livre" rows="4" required></textarea>
+
+            <label for="habilidades">Habilidades (separe por vírgula):</label>
+            <input type="text" id="habilidades" name="habilidades" required>
+
+            <h2>Contato</h2>
+            <label for="contato-nome">Nome:</label>
+            <input type="text" id="contato-nome" name="contato-nome" required>
+
+            <label for="contato-email">Email:</label>
+            <input type="email" id="contato-email" name="contato-email" required>
+
+            <label for="contato-whatsapp">WhatsApp:</label>
+            <input type="text" id="contato-whatsapp" name="contato-whatsapp">
+
+            <label for="contato-linkedin">LinkedIn:</label>
+            <input type="text" id="contato-linkedin" name="contato-linkedin">
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        <div id="portfolio-visualizacao" style="display:none;">
+            <h1 id="visu-nome"></h1>
+            <p id="visu-texto"></p>
+            <h2>Habilidades</h2>
+            <ul id="visu-habilidades"></ul>
+            <h2>Contato</h2>
+            <div id="visu-contato"></div>
+            <button id="editar">Editar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

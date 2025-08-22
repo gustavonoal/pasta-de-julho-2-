@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    background: #fff;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e67e22;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #34495e;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #ecf0f1;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#answers button:hover {
+    background: #d6eaf8;
+}
+
+.correct {
+    background: #27ae60 !important;
+    color: #fff;
+}
+
+.incorrect {
+    background: #c0392b !important;
+    color: #fff;
+}
+
+#feedback {
+    font-size: 17px;
+    margin: 12px 0;
+    min-height: 24px;
+}
+
+#next-btn {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#score {
+    font-size: 22px;
+    color: #27ae60;
+    margin-top: 18px;
+}
+
+/* MELHORIAS VISUAIS PARA A TELA DE INÍCIO */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    animation: fadeIn 1s;
+}
+
+#start-screen h1 {
+    color: #2980b9;
+    font-size: 2.2em;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+#start-btn {
+    background: linear-gradient(90deg, #74ebd5 0%, #2980b9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 36px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#start-btn:hover {
+    background: linear-gradient(90deg, #2980b9 0%, #74ebd5 100%);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}

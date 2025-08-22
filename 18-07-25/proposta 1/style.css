@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #f4f4f4;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+label {
+    display: block;
+    margin-top: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none; background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul { list-style: none;
+    padding: 0;
+}
+li {
+    background: #eaeaea;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+.contato span {
+    display: block;
+    margin-bottom: 6px;
+}
+.cabecalho-img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
